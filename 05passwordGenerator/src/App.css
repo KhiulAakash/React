@@ -1,0 +1,46 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+.container {
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  width: 30%;
+}
+h3 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.box input {
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.box2 {
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+}
