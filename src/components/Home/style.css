@@ -1,0 +1,16 @@
+.details{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    margin: 0 auto;
+    gap:5px;
+}
+.details h1{
+    text-align:center;
+}
+.home{
+    text-align:center;
+}
+.home p{
+    text-align:justify;
+}
