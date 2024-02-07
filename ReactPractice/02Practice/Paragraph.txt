@@ -1,0 +1,16 @@
+import React from "react";
+
+export default function Paragraph(props) {
+  return (
+    <div style={{ textAlign: "justify" }}>
+      <h1>
+        {props.name} ({props.rank})
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae
+        quibusdam optio eligendi facere excepturi a fugit id in. Fuga quibusdam
+        culpa id possimus ullam? Laborum reiciendis quas dolorem molestiae!
+      </p>
+    </div>
+  );
+}

@@ -1,0 +1,28 @@
+import { useEffect, useState } from "react";
+import "./styles.css";
+
+export default function App() {
+  const [greet, setGreet] = useState("");
+  const [color, setColor] = useState("");
+  const currentHour = new Date().getHours();
+  useEffect(() => {
+    // Customize the greet based on the current time
+    if (currentHour >= 1 && currentHour < 12) {
+      setGreet("Good Morning");
+      setColor("green");
+    } else if (currentHour >= 12 && currentHour < 18) {
+      setGreet("Good Afternoon");
+      setColor("red");
+    } else {
+      setGreet("Good Night");
+      setColor("blue");
+    }
+  });
+  return (
+    <div className="App">
+      <h1>
+        Hello sir! <span style={{ color: `${color}` }}>{greet}</span>
+      </h1>
+    </div>
+  );
+}

@@ -1,0 +1,29 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .star {
+    text-align: center;
+    display:flex;
+  }
+  
+  .stars {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .fa-star {
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .fa-star.checked {
+    color: gold;
+  }
+  p{
+    padding-top:4px;
+    margin-left:8px;
+  }

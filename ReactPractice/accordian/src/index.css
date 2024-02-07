@@ -1,0 +1,12 @@
+*{
+  margin:0;
+  padding:0;
+}
+.accordianBody{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#F5EEE6;
+  height:100vh;
+  width:100%
+}

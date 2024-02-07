@@ -1,0 +1,29 @@
+.accordian{
+    width:50%;
+}
+.accordian .enableBtn{
+    display:flex;
+    justify-content:center;
+    margin-top:2%
+}
+.accordian button{
+    border:none;
+    background-color:#E6A4B4;
+    padding:10px 20px 10px 20px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+}
+.accordian button:hover{
+    opacity:0.5;
+}
+.item{
+    text-align:justify;
+    background-color:#E6A4B4;
+    margin:20px 0 20px 0;
+    padding:10px 20px 10px 20px;
+    border-radius:5px;
+}
+.item .title{
+    cursor:pointer;
+}

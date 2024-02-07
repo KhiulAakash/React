@@ -1,0 +1,56 @@
+import { useState } from "react";
+import "./styles.css";
+
+export default function Calculator() {
+  const [num, setNum] = useState([]);
+  const cal = () => {
+    let res = eval(num.join(""));
+    setNum([res]);
+  };
+  return (
+    <div className="container">
+      <h1>Calculator</h1>
+      <input
+        type="text"
+        value={num.join("")}
+        onChange={(e) => {
+          setNum([e.target.value]);
+        }}
+        onKeyPress={cal}
+      />
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((value) => (
+        <button
+          onClick={() => {
+            setNum([...num, value]);
+          }}
+        >
+          {value}
+        </button>
+      ))}
+      {["+", "-", "*", "/"].map((value) => (
+        <button
+          onClick={() => {
+            setNum([...num, value]);
+          }}
+        >
+          {value}
+        </button>
+      ))}
+      <button
+        onClick={() => {
+          setNum([]);
+        }}
+      >
+        C
+      </button>
+      <button
+        onClick={() => {
+          setNum(num.slice(0, -1));
+        }}
+      >
+        Del
+      </button>
+      <button onClick={cal}>=</button>
+    </div>
+  );
+}

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(202, 202, 250);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  footer {
+    background-color: #E50914;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+  }
+  /*.card {
+    height: fit-content;
+    background-color: blue;
+    width:calc(33.33% - 20px);
+    border-radius: 10px;
+  }
+  .card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card p {
+    padding: 0 10px 0 10px;
+  }
+  .card h3 {
+    padding: 0 10px 0 10px;
+  }
+  .card .btn {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    padding:10px 20px 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color:#E50914;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+  } */
+/* .cards1 {
+    display: flex;
+    gap: 2%;
+    margin: 2% 0 2% 0;
+  }
+  .cards2 {
+    display: flex;
+    gap: 2%;
+  }  */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+}
+.card {
+  height: fit-content;
+  width: calc(
+    33.33% - 20px
+  ); /* Set width to one-third of the container with margin between cards */
+  background-color: #fff;
+  border-radius:10px;
+}
+.card img{
+  width:100%;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+.card p{
+  text-align:center;
+  margin:0;
+}
+.card h3{
+  text-align:center;
+  margin:10px;
+}
+.card .btn{
+  display:flex;
+  justify-content:center;
+  margin-bottom:10px;
+}
+.card .btn button{
+  border:none;
+  background-color:#E50914;
+  color:white;
+  border-radius:5px;
+  padding:10px 20px 10px 20px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.card .btn button:hover{
+  opacity:0.5;
+}
