@@ -1,43 +1,29 @@
 // Header.js
-import React, { useState, useContext } from 'react';
-import { NavLink } from 'react-router-dom';
-import "./style.css"
-import UserContext from '../../Context/UserContext';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useTheme } from "../../Context/ThemeContext";
+import "./style.css";
 
 const Header = () => {
-    const [mode, setMode] = useState(false);
-    const { setUser } = useContext(UserContext);
+  const { setIs} = useTheme;
 
-    const handleMode = () => {
-        setMode(!mode);
-        setUser(!mode); // Here, pass the updated value of mode
-        console.log(mode);
-    }
-
-    return (
-        <nav>
-            <ul>
-                <li>
-                    <NavLink to="/">
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/about">
-                        About
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/profile">
-                        Profile
-                    </NavLink>
-                </li>
-                <li>
-                    <button onClick={() => handleMode()}>{mode ? "Enable Light Mode" : "Enable Dark Mode"}</button>
-                </li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <button onClick={toggleMode}>
+            {isDarkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Header;
