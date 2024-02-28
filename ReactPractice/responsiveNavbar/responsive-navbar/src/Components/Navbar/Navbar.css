@@ -1,0 +1,81 @@
+nav {
+  height: 10vh;
+  background-color: #8c4843;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav .logo {
+  width: 40%;
+  height: fit-content;
+}
+nav .logo h1 {
+  margin: 0 10px;
+}
+nav .menuIcon {
+  display: none;
+}
+nav .menuList {
+  list-style: none;
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .menuList li {
+  cursor: pointer;
+}
+nav .menuList li button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(240, 93, 93);
+  color: white;
+}
+nav .menuList li button:hover {
+  opacity: 0.5;
+}
+nav .menuList li button:active {
+  opacity: 1;
+}
+nav .mobileMenuList {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  background-color: #9e643c;
+  height: 100vh;
+  transition: width 1s;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+  padding: 30px 0;
+}
+nav .mobileMenuList li {
+  margin: 0 20px;
+}
+nav .mobileMenuList.active {
+  width: 60%;
+}
+@media screen and (max-width: 1000px) {
+  nav .menuList {
+    display: none;
+  }
+  nav .menuIcon {
+    display: flex;
+    width: 60%;
+    justify-content: end;
+  }
+  nav .menuIcon #menuIcon {
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+}

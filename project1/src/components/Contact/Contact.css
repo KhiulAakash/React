@@ -1,0 +1,75 @@
+.Contact{
+    padding: 5% 5% 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Contact .formBox{
+    display: flex;
+}
+.Contact .formBox .form{
+    width: 50%;
+}
+.Contact h1{
+    font-weight: 800;
+    font-size: 48px;
+}
+.Contact p{
+    width: 90%;
+    color: #5A5959;
+}
+.Contact .formBox .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Contact .formBox .form .btns{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.Contact .formBox .form #emailBtn{
+    grid-area: 2/1/3/3;
+    padding:10px 10px;
+    border: 0.5px solid black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Contact .formBox .form #emailBtn:hover{
+    opacity: 0.5;
+}
+.Contact .formBox .form .formInput{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+    gap: 10px;
+}
+.Contact .formBox .form .formInput input{
+    height: 30px;
+    padding: 0 10px;
+}
+.Contact .formBox .form .formInput textarea{
+    height: 100px;
+    padding: 0 10px;
+}
+.Contact .formBox .formImg{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+@media screen and (max-width: 900px){
+    .Contact .formBox{
+        flex-direction: column-reverse;
+    }
+    .Contact h1{
+        font-size: 2rem;
+    }
+    .Contact .formBox .form{
+        width: 100%;
+    }
+    .Contact .formBox .formImg{
+        width: 100%;
+        justify-content: center;
+    }
+}
