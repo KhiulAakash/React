@@ -20,7 +20,7 @@ export default function Contact() {
                 <input type="email" placeholder='Email'/>
                 <textarea name="" id="" cols="30" rows="10" placeholder='Text'></textarea>
                 <div className="submitBtn">
-                  <button>Submit</button>
+                  <button>SUBMIT</button>
                 </div>
             </div>
         </div>
