@@ -53,6 +53,22 @@
     height: 100px;
     padding: 0 10px;
 }
+.Contact .formBox .form .formInput .submitBtn{
+    display: flex;
+    justify-content: end;
+}
+.Contact .formBox .form .formInput .submitBtn button{
+    width: 50%;
+    padding:10px 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Contact .formBox .form .formInput .submitBtn button:hover{
+    opacity: 0.5;
+}
 .Contact .formBox .formImg{
     width: 50%;
     display: flex;
